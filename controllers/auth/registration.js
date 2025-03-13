@@ -12,9 +12,6 @@ const register = async (req, res, next) => {
     const userEmailAddress = await User.findOne({
       email,
     });
-    const userPassword = await User.findOne({
-      password,
-    });
     console.log(userVerification);
     if (userVerification) {
       return res.status(400).json({
