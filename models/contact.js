@@ -8,4 +8,6 @@ const contactSchema = new mongoose.Schema({
 }, { timestamps: true }); // Automatically adds createdAt and updatedAt fields
 
 const Contact = mongoose.model("Contact", contactSchema);
+
+// Export the model so it can be used in other files
 module.exports = Contact;

@@ -7,4 +7,4 @@ const google = async(req, res) => {
     }
 };
 
-module.exports(google);
+module.exports = {google};
