@@ -7,6 +7,6 @@ const contactme= require('../../controllers/auth/contact');
 router.post("/registration", register);
 router.post("/login", loginform);
 router.post("/contact", contactme);
-router.get("/google", google);
+// router.get("/google", google);
 
 module.exports = router;

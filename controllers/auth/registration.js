@@ -1,5 +1,6 @@
 const User = require("../../models/User.model");
 const { registrationValidation } = require("../../services/validation");
+
 const register = async (req, res, next) => {
   try {
     const registerValues = await (req.body);
@@ -47,4 +48,4 @@ const register = async (req, res, next) => {
   }
 };
 
-module.exports = {register};
+module.exports = register;
